@@ -8,10 +8,10 @@ angular.module('admin', ['conf'])
         url: '/dashboard',
         views: {
             header: {
-                templateUrl: constant.baseUrl + '/welcome/view/header_admin'
+                templateUrl: constant.baseUrl + '/index.php/welcome/view/header_admin'
             },
             main: {
-                templateUrl: constant.baseUrl + '/welcome/view/dashboard',
+                templateUrl: constant.baseUrl + '/index.php/welcome/view/dashboard',
                 controller: 'DashboardCtrl as dashboard'
             }
         }
@@ -23,7 +23,7 @@ angular.module('admin', ['conf'])
             //     templateUrl: constant.baseUrl + '/welcome/view/header_print'
             // },
             main: {
-                templateUrl: constant.baseUrl + '/welcome/view/print',
+                templateUrl: constant.baseUrl + '/index.php/welcome/view/print',
                 controller: 'PrintFormCtrl as printform'
             }
         }
@@ -78,7 +78,7 @@ angular.module('admin', ['conf'])
 
 
       var allRegistration = function () {
-        $http.post(constant.baseUrl + '/welcome/allRegistration', {
+        $http.post(constant.baseUrl + '/index.php/welcome/allRegistration', {
             filter: $scope.query.filter,
             order: $scope.query.order,
             limit: $scope.query.limit,
@@ -106,7 +106,7 @@ angular.module('admin', ['conf'])
     console.log($state.params.appId);
     // Get data by regid
     var applicant = function () {
-      $http.post(constant.baseUrl + '/welcome/applicantByRegId', {
+      $http.post(constant.baseUrl + '/index.php/welcome/applicantByRegId', {
           regid: $state.params.appId
       }).success(function (response) {
           console.log(response);
