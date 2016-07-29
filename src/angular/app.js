@@ -56,7 +56,8 @@ var inbos = angular
   angular.module('conf', [])
   .constant('constant', {
     //   baseUrl: 'http://localhost/icos'
-      baseUrl: 'http://10.24.18.29/icos'
+    //   baseUrl: 'http://10.24.18.29/icos'
+      baseUrl: 'http://icos.myvnc.com'
   });
 
   // Directives
