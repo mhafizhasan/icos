@@ -8,10 +8,10 @@ angular.module('register', ['conf'])
         url: '/register',
         views: {
             header: {
-                templateUrl: constant.baseUrl + '/index.php/welcome/view/header'
+                templateUrl: constant.baseUrl + '/welcome/view/header'
             },
             main: {
-                templateUrl: constant.baseUrl + '/index.php/welcome/view/register',
+                templateUrl: constant.baseUrl + '/welcome/view/register',
                 controller: 'RegisterCtrl as register'
             }
         }
@@ -142,7 +142,7 @@ angular.module('register', ['conf'])
             //     reg.
             // }
 
-            $http.post(constant.baseUrl + '/index.php/welcome/submitRegistration', {
+            $http.post(constant.baseUrl + '/welcome/submitRegistration', {
                 expdate: ed,
                 dob: dob,
                 fullname: reg.fullname,
