@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = 'http://localhost/icos/';
-$config['base_url'] = 'http://info.malaysia.gov.my/icos/';
+$config['base_url'] = 'http://10.24.18.29/icos/';
 
 /*
 |--------------------------------------------------------------------------
