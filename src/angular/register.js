@@ -8,10 +8,10 @@ angular.module('register', ['conf'])
         url: '/register',
         views: {
             header: {
-                templateUrl: constant.baseUrl + '/welcome/view/header'
+                templateUrl: constant.baseUrl + '/index.php/welcome/view/header'
             },
             main: {
-                templateUrl: constant.baseUrl + '/welcome/view/register',
+                templateUrl: constant.baseUrl + '/index.php/welcome/view/register',
                 controller: 'RegisterCtrl as register'
             }
         }
