@@ -1,7 +1,7 @@
 angular.module('register', ['conf'])
 .config(['$stateProvider', '$urlRouterProvider', 'constant', function($stateProvider, $urlRouterProvider, constant) {
 
-    $urlRouterProvider.otherwise('/register');
+    // $urlRouterProvider.otherwise('/register');
 
     $stateProvider
     .state('register', {
