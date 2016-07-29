@@ -1,17 +1,17 @@
 angular.module('register', ['conf'])
 .config(['$stateProvider', '$urlRouterProvider', 'constant', function($stateProvider, $urlRouterProvider, constant) {
 
-    // $urlRouterProvider.otherwise('/register');
+    $urlRouterProvider.otherwise('/register');
 
     $stateProvider
     .state('register', {
         url: '/register',
         views: {
             header: {
-                templateUrl: constant.baseUrl + '/welcome/view/header'
+                templateUrl: constant.baseUrl + '/index.php/welcome/view/header'
             },
             main: {
-                templateUrl: constant.baseUrl + '/welcome/view/register',
+                templateUrl: constant.baseUrl + '/index.php/welcome/view/register',
                 controller: 'RegisterCtrl as register'
             }
         }
@@ -142,7 +142,7 @@ angular.module('register', ['conf'])
             //     reg.
             // }
 
-            $http.post(constant.baseUrl + '/welcome/submitRegistration', {
+            $http.post(constant.baseUrl + '/index.php/welcome/submitRegistration', {
                 expdate: ed,
                 dob: dob,
                 fullname: reg.fullname,

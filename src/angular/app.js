@@ -56,7 +56,7 @@ var inbos = angular
   angular.module('conf', [])
   .constant('constant', {
     //   baseUrl: 'http://localhost/icos'
-        baseUrl: 'http://info.malaysia.gov.my/icos'
+      baseUrl: 'http://info.malaysia.gov.my/icos'
   });
 
   // Directives
